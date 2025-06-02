@@ -105,6 +105,10 @@ export default defineConfig({
             text: 'js原型链',
             link: '05-链表/5.7-js原型链'
           },
+          {
+            text: '通过key获取json值',
+            link: '05-链表/5.8-通过key获取json值'
+          },
         ]
       }
     ],
