@@ -97,6 +97,10 @@ export default defineConfig({
             text: '删除重复元素',
             link: '05-链表/5.5-删除重复元素'
           },
+          {
+            text: '环形链表',
+            link: '05-链表/5.6-环形链表'
+          },
         ]
       }
     ],
