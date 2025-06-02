@@ -101,6 +101,10 @@ export default defineConfig({
             text: '环形链表',
             link: '05-链表/5.6-环形链表'
           },
+          {
+            text: 'js原型链',
+            link: '05-链表/5.7-js原型链'
+          },
         ]
       }
     ],
