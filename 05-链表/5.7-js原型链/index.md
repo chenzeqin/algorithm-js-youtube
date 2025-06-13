@@ -3,6 +3,7 @@
 原型链就是对象通过 __proto__ 指向构造函数的 prototype，形成一条链式结构，实现属性和方法的继承。
 
 ## 基本概念
+
 在 JavaScript 中：
 
 每个对象都有一个私有属性 [[Prototype]]（可以通过 __proto__ 访问）。
@@ -31,8 +32,8 @@ p.sayHi(); // 沿原型链找到 sayHi 方法
 3. 最终链条：
 p → Person.prototype → Object.prototype → null
 
-
 ## 原型链查找过程
+
 当访问 obj.prop 时：
 
 1. 先在 obj 自身查找。
@@ -40,8 +41,6 @@ p → Person.prototype → Object.prototype → null
 2. 如果没有，就查找 obj.__proto__。
 
 3. 一直向上找，直到 null。
-
-
 
 ## 实现instanceOf
 

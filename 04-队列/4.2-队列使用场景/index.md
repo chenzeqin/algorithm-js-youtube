@@ -3,6 +3,7 @@
 教程中的例子过于简单， 通过chatGpt列出的例子：
 
 ## 任务调度（Task Scheduling）
+
 用于控制异步任务的执行顺序，比如限制并发请求数。
 
 ```javascript
@@ -42,8 +43,6 @@ class TaskQueue {
 
 ```
 
-
-
 ## 事件队列（Event Queue）
 
 浏览器本身的事件循环机制就是一个“队列”，异步回调、定时器、Promise 微任务等都依赖队列。
@@ -51,7 +50,6 @@ class TaskQueue {
 setTimeout, setInterval
 
 Promise.then, queueMicrotask
-
 
 ## 用户触发多个任务时，用队列保证一次只处理一个
 
