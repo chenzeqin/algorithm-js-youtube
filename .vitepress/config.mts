@@ -110,7 +110,24 @@ export default defineConfig({
             link: '05-链表/5.8-通过key获取json值'
           },
         ]
-      }
+      },
+      {
+        text: '集合',
+        items: [
+          {
+            text: '集合简介',
+            link: '06-集合/6.1-集合简介'
+          },
+          {
+            text: '两个数组的交集',
+            link: '06-集合/6.2-两个数组的交集'
+          },
+          {
+            text: 'ES6中的Set',
+            link: '06-集合/6.3-ES6中的Set'
+          }
+        ]
+      },
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],

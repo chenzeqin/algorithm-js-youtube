@@ -16,15 +16,15 @@ JavaScript 引擎的任务队列是一个先进先出（FIFO）的数据结构�
 
 JavaScript 引擎的任务队列可以处理两种类型的任务：同步任务和异步任务。
 
-同步任务是指在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务。
+- **同步任务**是指在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务。
 
-异步任务是指不在主线程上执行的任务，它会在任务队列中排队，等待主线程空闲时执行。
+- **异步任务**是指不在主线程上执行的任务，它会在任务队列中排队，等待主线程空闲时执行。
 
 异步任务有两种类型：微任务（microtask）和宏任务（macrotask）。
 
-微任务是指 promise、process.nextTick()、Object.observe()、MutationObserver 等。
+- **微任务**是指 promise、process.nextTick()、Object.observe()、MutationObserver 等。
 
-宏任务是指 setTimeout、setInterval、setImmediate、I/O、UI rendering 等。
+- **宏任务**是指 setTimeout、setInterval、setImmediate、I/O、UI rendering 等。
 
 ## 事件循环的顺序
 
