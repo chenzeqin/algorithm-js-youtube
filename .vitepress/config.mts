@@ -128,6 +128,35 @@ export default defineConfig({
           }
         ]
       },
+      {
+        text: '字典',
+        items: [
+          {
+            text: '字典简介',
+            link: '07-字典/7.1-字典简介'
+          },
+          {
+            text: '两个数组的交集',
+            link: '07-字典/7.2-两个数组的交集'
+          },
+          {
+            text: '有效括号',
+            link: '07-字典/7.3-有效括号'  
+          },
+          {
+            text: '两数之和',
+            link: '07-字典/7.4-两数之和'
+          },
+          {
+            text: '无重复字符的最长子串',
+            link: '07-字典/7.5-无重复字符的最长子串'
+          },
+          {
+            text: '最小覆盖子串',
+            link: '07-字典/7.6-最小覆盖子串'
+          }
+        ]
+      }
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
