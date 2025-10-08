@@ -1,4 +1,4 @@
-# [有效括号](https://leetcode.cn/problems/valid-parentheses/description/)
+# [有效括号(leetcode 20)](https://leetcode.cn/problems/valid-parentheses/description/)
 
 ## 思路
 
@@ -6,7 +6,7 @@
 
 ## 代码实现
 
-<<< @/07-字典/7.3-有效括号/index.js
+<<< @/07-字典/7.3-有效括号/有效括号.js
 
 ## 复杂度分析
 

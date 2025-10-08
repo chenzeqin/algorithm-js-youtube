@@ -1,4 +1,4 @@
-# [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/description/)
+# [leetcode 76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/description/)
 
 ## 解题思路
 
@@ -12,7 +12,7 @@
 
 ## 代码实现
 
-<<< @/07-字典/7.6-最小覆盖子串/index.js#snippet
+<<< @/07-字典/7.6-最小覆盖子串/最小覆盖子串.js#snippet
 
 ## 复杂度分析
 

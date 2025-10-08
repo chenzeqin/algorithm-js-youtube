@@ -1,4 +1,4 @@
-# [两数之和](https://leetcode.cn/problems/two-sum/description/)
+# [leetcode 1. 两数之和](https://leetcode.cn/problems/two-sum/description/)
 
 ## 解题思路
 
@@ -8,7 +8,7 @@
 
 ## 代码实现
 
-<<< @/07-字典/7.4-两数之和/index.js#snippet
+<<< @/07-字典/7.4-两数之和/两数之和.js#snippet
 
 ## 复杂度分析
 

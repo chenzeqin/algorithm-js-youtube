@@ -18,15 +18,14 @@ const tree = {
 
 // #region snippet2
 function preOrder(root) {
-  if (!root) return [];
+  if (!root) return;
 
   const stack = [root];
   while (stack.length) {
-    const node = stack.pop();
-    console.log(node.val);
-
-    if (node.right) stack.push(node.right);
-    if (node.left) stack.push(node.left);
+    const n = stack.pop();
+    console.log(n.val);
+    if (n.right) stack.push(n.right);
+    if (n.left) stack.push(n.left);
   }
 }
 // #endregion snippet2
@@ -36,15 +35,21 @@ preOrder(tree); // 1 2 4 5 3
 
 // #region snippet3
 function inOrder(root) {
-  if (!root) return [];
+  if (!root) return;
+
+  // 类似遍历链表， 把左节点全部拿出
   const stack = [];
   let p = root;
-  while (p || stack.length) {
+
+  while (stack.length || p) {
     while (p) {
       stack.push(p);
       p = p.left;
     }
+
     const n = stack.pop();
+    console.log(n.val);
+    // 把右节点当作根节点， 也拿出左节点
     p = n.right;
   }
 }
@@ -56,18 +61,21 @@ inOrder(tree); // 4 2 5 1 3
 
 // #region snippet4
 function postOrder(root) {
-  if (!root) return [];
-
+  if (!root) return;
   const stack = [root];
-  const output = [];
+  const outputStack = [];
+
   while (stack.length) {
-    const node = stack.pop();
-    output.push(node.val);
-    if (node.left) stack.push(node.left);
-    if (node.right) stack.push(node.right);
+    // 全部先存起来， 再反向取值
+    const n = stack.pop();
+    outputStack.push(n); // 双栈， 方向负负得正
+    if (n.left) stack.push(n.left);
+    if (n.right) stack.push(n.right);
   }
-  while (output.length) {
-    console.log(output.pop());
+
+  while (outputStack.length) {
+    const n = outputStack.pop();
+    console.log(n.val);
   }
 }
 

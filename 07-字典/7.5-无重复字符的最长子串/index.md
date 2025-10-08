@@ -1,4 +1,4 @@
-# [无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/)
+# [leetcode 3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/)
 
 ## 解题思路
 
@@ -7,13 +7,13 @@
 
   1. 用两个指针l和r表示当前窗口的左右边界，初始都为0。
   2. 用Map记录每个字符上一次出现的位置。
-  3. 当遇到重复字符且其上一次出现的位置在当前窗口内时，移动左指针l到重复字符的下一个位置。
+  3. 当遇到重复字符且其上一次出现的位置在当前窗口内时( map.get(char) >= l)，移动左指针l到重复字符的下一个位置。
   4. 每次更新窗口长度的最大值。
   5. 最终返回最大长度即可。
 
 ## 代码实现
 
-<<< @/07-字典/7.5-无重复字符的最长子串/index.js#snippet
+<<< @/07-字典/7.5-无重复字符的最长子串/无重复字符的最长子串.js#snippet
 
 ## 复杂度分析
 
