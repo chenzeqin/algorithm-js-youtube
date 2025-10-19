@@ -47,12 +47,12 @@ jobs:
         run: pnpm install # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: pnpm docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
-      - name: List built files
+      - name: Verify build output
         run: |
-          echo "==== Build Output ===="
-          ls -alh .vitepress/dist
-          echo "==== index.html Preview ===="
-          head -n 30 .vitepress/dist/index.html
+          # 确保构建输出存在
+          test -d .vitepress/dist
+          test -f .vitepress/dist/index.html
+          echo "Build verification completed"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
