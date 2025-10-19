@@ -3,26 +3,28 @@ name: Deploy VitePress to GitHub Pages
 on:
   push:
     branches:
-      - master  # 或你的默认分支
+      - main  # 或你的默认分支名称（例如 master）
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: 'pnpm'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9  # 或你本地使用的版本
+          run_install: true
 
       - name: Build
-        run: npm run docs:build
+        run: pnpm docs:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
