@@ -3,30 +3,33 @@ name: Deploy VitePress to GitHub Pages
 on:
   push:
     branches:
-      - master  # 或你的默认分支名称（例如 master）
+      - master  # 或你的默认分支
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Setup Node
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'pnpm'
 
+      # 👇 这一步非常关键：安装 pnpm
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9  # 或你本地使用的版本
-          run_install: true
+          version: 9  # 这里写你本地 pnpm 的版本，比如 9 或 8
+          run_install: true  # 自动执行 pnpm install
 
-      - name: Build
+      - name: Build VitePress site
         run: pnpm docs:build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
