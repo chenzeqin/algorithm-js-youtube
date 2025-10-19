@@ -1,0 +1,12 @@
+import{_ as s,c as a,o as i,a1 as n}from"./chunks/framework.B4u6hNpB.js";const t="/algorithm-js-youtube/assets/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%A0%88.oi77ec0y.png",_=JSON.parse('{"title":"函数调用栈","description":"","frontmatter":{},"headers":[],"relativePath":"03-栈/3.4-函数调用堆栈/index.md","filePath":"03-栈/3.4-函数调用堆栈/index.md"}'),p={name:"03-栈/3.4-函数调用堆栈/index.md"},e=n(`<h1 id="函数调用栈" tabindex="-1">函数调用栈 <a class="header-anchor" href="#函数调用栈" aria-label="Permalink to &quot;函数调用栈&quot;">​</a></h1><p>js 中函数调用栈的实现是基于栈的数据结构。</p><p>vscode F5 开始调试：</p><p>函数调用堆栈： 后进先出:</p><p>入： fn1 =&gt; fn2 =&gt; fn3 出： fn3 =&gt; fn2 =&gt; fn1</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> fn1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">() {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">  fn2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">();</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> fn2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">() {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">  fn3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">();</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> fn3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">() {}</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">fn1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">()</span></span></code></pre></div><p><img src="`+t+'" alt="函数调用栈"></p>',7),l=[e];function h(k,c,d,r,o,E){return i(),a("div",null,l)}const f=s(p,[["render",h]]);export{_ as __pageData,f as default};
