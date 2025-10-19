@@ -13,14 +13,15 @@
 var minDepth = function (root) {
   if (!root) return 0;
 
-  const queqe = [[root, 1]];
-  while (queqe.length) {
-    const [p, l] = queqe.shift();
+  const queue = [[root, 1]];
+  
+  while (queue.length) {
+    const [p, l] = queue.shift();
     if (p.left) {
-      queqe.push([p.left, l + 1]);
+      queue.push([p.left, l + 1]);
     }
     if (p.right) {
-      queqe.push([p.right, l + 1]);
+      queue.push([p.right, l + 1]);
     }
     if (!p.left && !p.right) {
       return l;
