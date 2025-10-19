@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'algorithm-js-youtube',
   description: 'javascript  algorithm tutorial course from youtube ',
-  base: '/algorithm-js-youtube/', // 👈 必须加上这一行（斜杠前后都要）
+  base: "/algorithm-js-youtube/", // 👈 必须加上这一行（斜杠前后都要）
 
   themeConfig: {
     outline: {
