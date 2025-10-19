@@ -3,7 +3,7 @@ name: Deploy VitePress to GitHub Pages
 on:
   push:
     branches:
-      - main  # 或你的默认分支名称（例如 master）
+      - master  # 或你的默认分支名称（例如 master）
 
 jobs:
   deploy:
