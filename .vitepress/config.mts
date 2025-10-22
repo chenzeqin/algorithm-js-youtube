@@ -172,6 +172,12 @@ export default defineConfig({
           { text: '二叉树的中序遍历', link: '/08-树/8.8-二叉树的中序遍历' },
           { text: '路径总和', link: '/08-树/8.9-路径总和' },
         ]
+      },
+      {
+        text: '图',
+        items: [
+          { text: '图简介', link: '/09-图/9.1-图简介' },
+        ]
       }
     ],
 
