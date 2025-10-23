@@ -53,6 +53,12 @@ jobs:
           test -d .vitepress/dist
           test -f .vitepress/dist/index.html
           echo "Build verification completed"
+      - name: List built files
+        run: |
+          echo "==== Build Output ===="
+          ls -alh .vitepress/dist
+          echo "==== index.html Preview ===="
+          head -n 30 .vitepress/dist/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
