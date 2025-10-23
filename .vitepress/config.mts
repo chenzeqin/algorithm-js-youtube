@@ -178,6 +178,7 @@ export default defineConfig({
         items: [
           { text: '图简介', link: '/09-图/9.1-图简介' },
           { text: '图的深度和广度优先遍历', link: '/09-图/9.2-图的深度和广度优先遍历' },
+          { text: '有效数字', link: '/09-图/9.3-有效数字' },
         ]
       }
     ],
