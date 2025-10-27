@@ -23,6 +23,10 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+artifacts:
+  paths:
+    - public
+
 jobs:
   # 构建工作
   build:
@@ -58,11 +62,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
-
-      artifacts:
-        paths:
-          - public
-
 
   # 部署工作
   deploy:
