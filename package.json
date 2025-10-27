@@ -1,7 +1,7 @@
 {
   "name": "algorithm-js-youtube",
   "version": "1.0.0",
-  "description": "pratice algorithm in JavaScript for cource of algorithm from youtube",
+  "description": "practice algorithm in JavaScript for course of algorithm from youtube",
   "main": "index.js",
   "devDependencies": {
     "vitepress": "^1.2.3"
