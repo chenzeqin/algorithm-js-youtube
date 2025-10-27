@@ -23,10 +23,6 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-artifacts:
-  paths:
-    - public
-
 jobs:
   # 构建工作
   build:
