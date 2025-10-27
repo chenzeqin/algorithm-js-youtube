@@ -59,6 +59,11 @@ jobs:
         with:
           path: .vitepress/dist
 
+      artifacts:
+        paths:
+          - public
+
+
   # 部署工作
   deploy:
     environment:
