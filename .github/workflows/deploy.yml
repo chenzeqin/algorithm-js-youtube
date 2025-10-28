@@ -55,7 +55,7 @@ jobs:
           head -n 30 .vitepress/dist/index.html
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
 
