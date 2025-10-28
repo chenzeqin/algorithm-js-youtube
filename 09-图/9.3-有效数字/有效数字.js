@@ -41,8 +41,8 @@ var isNumber = function (s) {
     },
   };
 
-  let currentState = 0;
-  let charType = '';
+  let currentState = 0; // 当前状态
+  let charType = ''; // 字符类型
   // 停留在这3个状态就算有效数字
   const set = new Set([3, 5, 6]);
   for (char of s.trim()) {
