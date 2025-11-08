@@ -73,3 +73,13 @@ function processQueue() {
 }
 
 ```
+
+项目实际案例
+
+```js
+    // 一个请求结束再进行下一个请求， 防止频繁调用被限流
+    await list.reduce(async (prev, curr) => {
+      await prev
+      return await request(curr)
+    }, Promise.resolve())
+```
