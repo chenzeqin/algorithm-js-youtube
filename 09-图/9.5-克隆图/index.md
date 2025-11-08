@@ -1,16 +1,5 @@
 # [leetcode 133. 克隆图](https://leetcode.cn/problems/clone-graph/description/)
 
-给你无向 **[连通](https://baike.baidu.com/item/连通图/6460995?fr=aladdin)** 图中一个节点的引用，请你返回该图的 [**深拷贝**](https://baike.baidu.com/item/深拷贝/22785317?fr=aladdin)（克隆）。
-
-图中的每个节点都包含它的值 `val`（`int`） 和其邻居的列表（`list[Node]`）。
-
-```javascript
-class Node {
-    public int val;
-    public List<Node> neighbors;
-}
-```
-
 ## 解题思路
 
 ::: tip 核心思想
@@ -59,19 +48,7 @@ class Node {
   - `visited` Map 存储所有节点：`O(V)`
   - DFS 递归栈或 BFS 队列：`O(V)`（最坏情况）
 
-## 示例
-
-```javascript
-// 输入：adjList = [[2,4],[1,3],[2,4],[1,3]]
-// 输出：[[2,4],[1,3],[2,4],[1,3]]
-// 解释：
-// 节点 1 的值是 1，它有两个邻居：节点 2 和 4 。
-// 节点 2 的值是 2，它有两个邻居：节点 1 和 3 。
-// 节点 3 的值是 3，它有两个邻居：节点 2 和 4 。
-// 节点 4 的值是 4，它有两个邻居：节点 1 和 3 。
-```
-
-## 小结与易错点
+## 总结
 
 - **必须使用 Map 记录已克隆节点**：否则会创建重复节点或陷入无限递归
 - **DFS 和 BFS 都可以解决**：DFS 代码更简洁，BFS 适合处理深度很大的图
