@@ -16,7 +16,7 @@ var cloneGraphBFS = function (node) {
   if (!node) return null;
 
   // 使用 Map 存储已克隆的节点
-  const visited = new Map();
+  const visited = new WeakMap();
   // 使用队列进行 BFS
   const queue = [node];
 

@@ -14,7 +14,7 @@
 var cloneGraph = function (node) {
   if (!node) return;
 
-  const visited = new Map();
+  const visited = new WeakMap();
   const dfs = function (originNode) {
     if (visited.has(originNode)) {
       return visited.get(originNode);
