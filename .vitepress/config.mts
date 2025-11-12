@@ -5,6 +5,9 @@ export default defineConfig({
   title: 'algorithm-js-youtube',
   description: 'javascript  algorithm tutorial course from youtube ',
   base: "/algorithm-js-youtube/", // 👈 必须加上这一行（斜杠前后都要）
+  head: [
+    ['link', { rel: 'icon', href: 'favicon.ico' }],
+  ],
 
   themeConfig: {
     outline: {
@@ -181,6 +184,12 @@ export default defineConfig({
           { text: '有效数字', link: '/09-图/9.3-有效数字' },
           { text: '太平洋大西洋水流问题', link: '/09-图/9.4-太平洋大西洋水流问题' },
           { text: '克隆图', link: '/09-图/9.5-克隆图' },
+        ]
+      },
+      {
+        text: '堆',
+        items: [
+          { text: '堆简介', link: '/10-堆/10.1-堆简介' },
         ]
       }
     ],
