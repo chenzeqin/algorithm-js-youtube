@@ -79,7 +79,7 @@ class MinHeap {
   static getParentIndex(index) {
     // return Math.floor((index - 1) / 2);
     //  二进制运算， 向右移一位
-    return index >> 1;
+    return (index - 1) >> 1;
   }
 
   static getLeftIndex(index) {
@@ -97,9 +97,9 @@ const heap = new MinHeap();
 heap.insert(3);
 heap.insert(2);
 heap.insert(1);
-console.log(heap.heap); // [1, 2, 3]
+console.log(heap.heap); // [1, 3, 2]
 heap.insert(4);
-console.log(heap.heap); // [1, 2, 3, 4]
+console.log(heap.heap); // [1, 3, 2, 4]
 heap.pop();
-console.log(heap.heap); // [2, 4, 3]
+console.log(heap.heap); // [2, 3, 4]
 // #endregion snippet2
