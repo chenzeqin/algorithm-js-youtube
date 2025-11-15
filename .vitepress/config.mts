@@ -190,6 +190,7 @@ export default defineConfig({
         text: '堆',
         items: [
           { text: '堆简介', link: '/10-堆/10.1-堆简介' },
+          { text: '实现最小堆', link: '/10-堆/10.2-实现最小堆' },
         ]
       }
     ],
